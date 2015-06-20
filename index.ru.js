@@ -11400,7 +11400,7 @@ modules.define(
 
             return $.ajax({
                 dataType: 'xml',
-                url: 'lib/reader.xsl'
+                url: window.document.location.href + 'lib/reader.xsl'
             }).then(function (xsl) {
                 return this._xsltTransform(xml, xsl);
             }.bind(this));
