@@ -9930,7 +9930,7 @@ modules.define(
             // наша ручка /data/ проксируется на http://partnersdnld.litres.ru/static/trials
             //url = url.replace('http://partnersdnld.litres.ru/static/trials', '/data');
 
-            zip.workerScriptsPath = '/lib/';
+            zip.workerScriptsPath = window.document.location.pathname + 'lib/';
             zip.createReader((isBase64 ? new zip.Data64URIReader(url) : new zip.HttpReader(url)), function (reader) {
                 // get all entries from the zip
                 reader.getEntries(function (entries) {
