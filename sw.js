@@ -1,6 +1,6 @@
 const CACHE_PREFIX = 'chitalka-shell-';
-const CACHE_NAME = CACHE_PREFIX + '757e7037';
-const PRECACHE = ["./","./manifest.webmanifest","./icons/icon-192.png","./icons/icon-512.png","./icons/icon-maskable-512.png","./assets/Anna-Karenina-10258ZOi.fb2","./assets/index-BSifRnyh.js","./assets/index-CmHX2b5A.css"];
+const CACHE_NAME = CACHE_PREFIX + '63982522';
+const PRECACHE = ["./","./manifest.webmanifest","./manifest.ru.webmanifest","./icons/icon-192.png","./icons/icon-512.png","./icons/icon-maskable-512.png","./assets/Anna-Karenina-10258ZOi.fb2","./assets/index-49-XGGmB.css","./assets/index-ByzUiwVK.js"];
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
@@ -65,7 +65,7 @@ self.addEventListener('fetch', (event) => {
   if (request.method !== 'GET') return;
   const url = new URL(request.url);
   if (url.origin !== self.location.origin) return;
-  const mutablePwaAsset = url.pathname.endsWith('/manifest.webmanifest')
+  const mutablePwaAsset = url.pathname.endsWith('.webmanifest')
     || url.pathname.includes('/icons/');
 
   event.respondWith(
