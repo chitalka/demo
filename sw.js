@@ -1,6 +1,6 @@
 const CACHE_PREFIX = 'chitalka-shell-';
-const CACHE_NAME = CACHE_PREFIX + 'fe4d546e';
-const PRECACHE = ["./","./manifest.webmanifest","./manifest.ru.webmanifest","./icons/icon-192.png","./icons/icon-512.png","./icons/icon-maskable-512.png","./assets/Anna-Karenina-10258ZOi.fb2","./assets/index-BY9SGY28.css","./assets/index-sSQFsq5d.js"];
+const CACHE_NAME = CACHE_PREFIX + 'c695b38f';
+const PRECACHE = ["./","./manifest.webmanifest","./manifest.ru.webmanifest","./icons/icon-192.png","./icons/icon-512.png","./icons/icon-maskable-512.png","./assets/Anna-Karenina-10258ZOi.fb2","./assets/index-4M7oxbcO.css","./assets/index-BOuMt9Z6.js"];
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
